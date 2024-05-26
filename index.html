@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,32 +15,42 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
     <!--CSS file link-->
     <link rel="stylesheet" href="assets/CSS/style.css">
-\</head>
+</head>
+
 <body>
     <!--header-->
     <header>
        <a href="index.html">
-        <h1 id="logo">Love Running</h1>
+          <h1 id="logo">Love Running</h1>
        </a>
+       <label for="nav-toggle" class="nav-toggle-label"><i class="fa-solid fa-bars"></i></label>
+       <input type="checkbox" id="nav-toggle" name="nav-toggle">
+       <nav>
+          <ul id="menu">
+              <li><a class="active" href="index.html">Home</a></li>
+              <li><a href="">Gallery</a></li>
+              <li><a href="">Sign Up</a></li>
+          </ul>
+       </nav>
     </header>
-    <label for="nav-toggle" class="nav-toggle-label">X</label>
-    <input type="checkbox" id="nav-toggle" name="nav-toggle"
-    <nav>
-        <ul id="menu">
-            <li>
-                <a class="active" href="">Home</a>
-            </li>
-            <li>
-                <a href="">Gallery</a>
-            </li>
-            <li>
-                <a href="">Sign Up</a>
-            </li>
-        </ul>
-    </nav>
+    
     <!--main content-->
     <main>Main Content</main>
     <!--footer-->
-    <footer>Footer</footer>
+    <footer>
+        <ul>
+            <a href="https://en-gb.facebook.com/" target="_blank" rel="no-opener" aria-label="Visit our Facebook page"><i class="fab fa-facebook"></i></a>
+        </ul>
+        <ul>
+            <a href="https://x.com/?lang=en" target="_blank" rel="no-opener" aria-label="Visit our Twitter page"> </a>
+        </ul>
+        <ul>
+            <a href="https://www.youtube.com/" target="_blank" rel="no-opener" aria-label="Visit our YouTube page"> </a>
+        </ul>
+        <ul>
+            <a href="https://www.instagram.com/" target="_blank" rel="no-opener aria-label="Visit our Instagram page"> </a>
+        </ul>
+    </footer>
+    <script src="https://kit.fontawesome.com/94ada547ee.js" crossorigin="anonymous"></script>
 </body>
 </html>
