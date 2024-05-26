@@ -29,6 +29,10 @@ header {
     color: inherit;
     /* box-shadow adds a shadow behind the element */
     box-shadow: 0 2px 2px #3a3a3a;
+    /* flex box styles*/
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 h1 {
     font-family: "Oswald" sans-serif;
@@ -48,6 +52,30 @@ h1 {
 }
 .active {
     border-bottom: 1px solid #3a3a3a;
+}
+
+/*nav*/
+nav {
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 2px 2px #3a3a3a;
+    display: none;
+    top: 100%;
+
+}
+/* nav toggle */
+#nav-toggle:checked {
+    display: block;
+}
+#nav-toggle {
+    display: none;
+}
+.nav-toggle {
+    font-size: 2rem;
+    
 }
 /* main */
 main {
