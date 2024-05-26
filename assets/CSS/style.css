@@ -4,6 +4,15 @@
     margin: 0;
     box-sizing: border-box;
 }
+/* Generic styles*/
+body {
+    min-height: 100%;
+    color: #3a3a3a;
+    /*flex box styles*/
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+}
 /* heading */
 h1 {
     background-color: lightcoral;
