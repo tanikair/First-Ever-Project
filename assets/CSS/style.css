@@ -12,14 +12,18 @@
 body {
     min-height: 100%;
     color: #3a3a3a;
+    font-family: "lato" sans-serif;
     /*flex box styles*/
     display: flex;
     flex-direction: column;
     flex: 1 0 auto;
 }
-/* heading */
-h1 {
+/* header */
+header {
     background-color: lightcoral;
+}
+h1 {
+    font-family: "Oswald" sans-serif;
 }
 /* main */
 main {
