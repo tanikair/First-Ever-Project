@@ -10,9 +10,9 @@
 
 /* Generic styles*/
 body {
-    min-height: 100%;
+    min-height: 100vh;
     color: #3a3a3a;
-    font-family: "lato" sans-serif;
+    font-family: 'lato' sans-serif;
     /*flex box styles*/
     display: flex;
     flex-direction: column;
@@ -25,8 +25,6 @@ header {
     position: fixed;
     z-index: 99;
     width: 100%;
-    text-decoration: none;
-    color: inherit;
     /* box-shadow adds a shadow behind the element */
     box-shadow: 0 2px 2px #3a3a3a;
     /* flex box styles*/
@@ -34,8 +32,12 @@ header {
     justify-content: space-between;
     align-items: baseline;
 }
+header a {
+    text-decoration: none;
+    color: inherit;
+}
 h1 {
-    font-family: "Oswald" sans-serif;
+    font-family: 'Oswald' sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #252525;
@@ -54,7 +56,7 @@ h1 {
     border-bottom: 1px solid #3a3a3a;
 }
 
-/*nav*/
+/*nav bar styles with dropdown toggle*/
 nav {
     position: absolute;
     background-color: #ffffff;
@@ -67,19 +69,22 @@ nav {
 
 }
 /* nav toggle */
-#nav-toggle:checked {
+#nav-toggle:checked~nav {
     display: block;
 }
 #nav-toggle {
     display: none;
 }
-.nav-toggle {
+.nav-toggle label {
     font-size: 2rem;
-    
+
 }
 /* main */
 main {
     background-color: lightblue;
+    /*adding space to push content down*/
+    margin-top: 47px;
+    flex: 1 0 auto;
 }
 /* footer */
 footer {
