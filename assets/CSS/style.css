@@ -79,13 +79,21 @@ nav {
     font-size: 2rem;
 
 }
+
 /* main */
 main {
-    background-color: lightblue;
     /*adding space to push content down*/
     margin-top: 47px;
     flex: 1 0 auto;
 }
+/* hero section styles*/
+#hero {
+    height: 600px;
+    width: 100%;
+    background: url("../images/hero-image.webp") no-repeat center center/ cover;
+}
+
+
 /* footer */
 footer {
     background-color: orange;
