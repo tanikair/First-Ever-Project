@@ -159,6 +159,9 @@ hr {
 #times h3 {
     color: #fafafa;
 }
+.hidden-heading {
+    display: none;
+}
 
 /* footer */
 footer {
