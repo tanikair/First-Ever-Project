@@ -180,9 +180,25 @@ footer {
     color: #3a3a3a;
 }
 
+/*gallery styles*/
+#photos img {
+    width: 100%;
+    line-height: 1em;
+}
+#photos {
+    line-height: 0;
+}
+
 
 /* media queries */
 
+/*mobile devices media query*/
+@media screen and (min-width: 576px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
+}
 /*Tablet media query*/
 @media  screen and (min-width: 768px) {
     /*header*/
@@ -229,6 +245,10 @@ footer {
         text-align: end;
         align-self: end;
     }
+    /*gallery*/
+    #photos {
+        column-count: 3;
+    }
 }
 
 /*Larger Tablet media query*/
@@ -248,6 +268,10 @@ footer {
     #benefits-mental > div {
         text-align: end;
         align-self: end;
+    }
+    /*gallery*/
+    #photos {
+        column-count: 3;
     }
     }
 
@@ -272,5 +296,9 @@ footer {
     }
     #benefits-physical > div {
         align-self: flex-end;
+    }
+    /*gallery*/
+    #photos {
+        column-count: 4;
     }
 }
